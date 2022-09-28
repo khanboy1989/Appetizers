@@ -7,14 +7,17 @@
 
 import SwiftUI
 
-struct AccountVIew: View {
+struct AccountView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            Text("Account")
+                .navigationTitle("🤣 Account")
+        }
     }
 }
 
 struct AccountVIew_Previews: PreviewProvider {
     static var previews: some View {
-        AccountVIew()
+        AccountView()
     }
 }

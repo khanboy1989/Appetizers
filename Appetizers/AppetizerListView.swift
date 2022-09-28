@@ -8,8 +8,30 @@
 import SwiftUI
 
 struct AppetizerListView: View {
+    @StateObject var viewModel = AppetizerListViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            NavigationView {
+                List(viewModel.appetizers) { appetizer in
+                   AppetizerListCell(appetizer: appetizer)
+                }
+                .navigationTitle("🍟 Appetizers")
+            }.navigationViewStyle(StackNavigationViewStyle())
+            .onAppear{
+                viewModel.getAppetizers()
+            }
+            
+            if viewModel.isLoading {
+                LoadingView()
+            }
+            
+        }.alert(item: $viewModel.alertItem) { alertItem in
+            Alert(title: alertItem.title,
+                  message: alertItem.message ,
+                  dismissButton: alertItem.dismissButton)
+        }
+        
     }
 }
 
@@ -18,3 +40,4 @@ struct AppetizerListView_Previews: PreviewProvider {
         AppetizerListView()
     }
 }
+
