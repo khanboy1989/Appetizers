@@ -75,21 +75,13 @@
 		54260BAF28E04F3A00945370 /* Appetizers */ = {
 			isa = PBXGroup;
 			children = (
+				548E38AE28E815BD00421823 /* Model */,
+				548E38AA28E8153800421823 /* Utilities */,
+				548E38AF28E815D400421823 /* Views */,
+				548E38A628E814D700421823 /* Screens */,
 				54260BB028E04F3A00945370 /* AppetizersApp.swift */,
-				54260BB228E04F3A00945370 /* AppetizerTabView.swift */,
 				54260BB428E04F3E00945370 /* Assets.xcassets */,
 				54260BB628E04F3E00945370 /* Preview Content */,
-				54260BBE28E0721500945370 /* AppetizerListView.swift */,
-				54260BC028E0722300945370 /* AccountVIew.swift */,
-				54260BC228E0723000945370 /* OrderView.swift */,
-				5448B29228E37BB600374839 /* Appetizer.swift */,
-				5448B29428E380D500374839 /* AppetizerListCell.swift */,
-				5448B29628E3819E00374839 /* NetworkManager.swift */,
-				5448B29828E3828400374839 /* APError.swift */,
-				5448B29A28E3892500374839 /* AppetizerListViewModel.swift */,
-				54AE8B4928E4559000E60AC0 /* Alert.swift */,
-				54AE8B4B28E45CC600E60AC0 /* LoadingView.swift */,
-				54AE8B4D28E45D8800E60AC0 /* Color+Ext.swift */,
 				54AE8B4F28E463BC00E60AC0 /* RemoteImage.swift */,
 			);
 			path = Appetizers;
@@ -101,6 +93,118 @@
 				54260BB728E04F3E00945370 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		548E38A628E814D700421823 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				54260BB228E04F3A00945370 /* AppetizerTabView.swift */,
+				548E38A728E814E400421823 /* AppetizerListView */,
+				548E38A828E814F000421823 /* AccountView */,
+				548E38A928E814F900421823 /* OrderView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		548E38A728E814E400421823 /* AppetizerListView */ = {
+			isa = PBXGroup;
+			children = (
+				5448B29A28E3892500374839 /* AppetizerListViewModel.swift */,
+				54260BBE28E0721500945370 /* AppetizerListView.swift */,
+			);
+			path = AppetizerListView;
+			sourceTree = "<group>";
+		};
+		548E38A828E814F000421823 /* AccountView */ = {
+			isa = PBXGroup;
+			children = (
+				54260BC028E0722300945370 /* AccountVIew.swift */,
+			);
+			path = AccountView;
+			sourceTree = "<group>";
+		};
+		548E38A928E814F900421823 /* OrderView */ = {
+			isa = PBXGroup;
+			children = (
+				54260BC228E0723000945370 /* OrderView.swift */,
+			);
+			path = OrderView;
+			sourceTree = "<group>";
+		};
+		548E38AA28E8153800421823 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				548E38AD28E8159600421823 /* Alert */,
+				548E38AC28E8155D00421823 /* Extensions */,
+				548E38AB28E8155200421823 /* Managers */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		548E38AB28E8155200421823 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				5448B29628E3819E00374839 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		548E38AC28E8155D00421823 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				54AE8B4D28E45D8800E60AC0 /* Color+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		548E38AD28E8159600421823 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				5448B29828E3828400374839 /* APError.swift */,
+				54AE8B4928E4559000E60AC0 /* Alert.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		548E38AE28E815BD00421823 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5448B29228E37BB600374839 /* Appetizer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		548E38AF28E815D400421823 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				548E38B228E8160300421823 /* Image */,
+				548E38B128E815F300421823 /* Cells */,
+				548E38B028E815E900421823 /* UIKit Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		548E38B028E815E900421823 /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				54AE8B4B28E45CC600E60AC0 /* LoadingView.swift */,
+			);
+			path = "UIKit Components";
+			sourceTree = "<group>";
+		};
+		548E38B128E815F300421823 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5448B29428E380D500374839 /* AppetizerListCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		548E38B228E8160300421823 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
