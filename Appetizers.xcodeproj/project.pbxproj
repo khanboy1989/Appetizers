@@ -19,6 +19,12 @@
 		5448B29728E3819E00374839 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5448B29628E3819E00374839 /* NetworkManager.swift */; };
 		5448B29928E3828400374839 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5448B29828E3828400374839 /* APError.swift */; };
 		5448B29B28E3892500374839 /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5448B29A28E3892500374839 /* AppetizerListViewModel.swift */; };
+		548E38B428E8181300421823 /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548E38B328E8181300421823 /* AppetizerDetailView.swift */; };
+		548E38B728E82EF900421823 /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548E38B628E82EF900421823 /* APButton.swift */; };
+		548E38B928E8300800421823 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548E38B828E8300800421823 /* XDismissButton.swift */; };
+		548E38BB28E8386F00421823 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548E38BA28E8386F00421823 /* AccountViewModel.swift */; };
+		548E38BD28E840F300421823 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548E38BC28E840F300421823 /* String+Ext.swift */; };
+		548E38BF28E84DBC00421823 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548E38BE28E84DBC00421823 /* User.swift */; };
 		54AE8B4A28E4559000E60AC0 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AE8B4928E4559000E60AC0 /* Alert.swift */; };
 		54AE8B4C28E45CC600E60AC0 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AE8B4B28E45CC600E60AC0 /* LoadingView.swift */; };
 		54AE8B4E28E45D8800E60AC0 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AE8B4D28E45D8800E60AC0 /* Color+Ext.swift */; };
@@ -39,6 +45,12 @@
 		5448B29628E3819E00374839 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		5448B29828E3828400374839 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 		5448B29A28E3892500374839 /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
+		548E38B328E8181300421823 /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
+		548E38B628E82EF900421823 /* APButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
+		548E38B828E8300800421823 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
+		548E38BA28E8386F00421823 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		548E38BC28E840F300421823 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		548E38BE28E84DBC00421823 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		54AE8B4928E4559000E60AC0 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		54AE8B4B28E45CC600E60AC0 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		54AE8B4D28E45D8800E60AC0 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
@@ -111,6 +123,7 @@
 			children = (
 				5448B29A28E3892500374839 /* AppetizerListViewModel.swift */,
 				54260BBE28E0721500945370 /* AppetizerListView.swift */,
+				548E38B328E8181300421823 /* AppetizerDetailView.swift */,
 			);
 			path = AppetizerListView;
 			sourceTree = "<group>";
@@ -118,6 +131,7 @@
 		548E38A828E814F000421823 /* AccountView */ = {
 			isa = PBXGroup;
 			children = (
+				548E38BA28E8386F00421823 /* AccountViewModel.swift */,
 				54260BC028E0722300945370 /* AccountVIew.swift */,
 			);
 			path = AccountView;
@@ -153,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				54AE8B4D28E45D8800E60AC0 /* Color+Ext.swift */,
+				548E38BC28E840F300421823 /* String+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -170,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				5448B29228E37BB600374839 /* Appetizer.swift */,
+				548E38BE28E84DBC00421823 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,6 +193,7 @@
 		548E38AF28E815D400421823 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				548E38B528E82EE300421823 /* Buttons */,
 				548E38B228E8160300421823 /* Image */,
 				548E38B128E815F300421823 /* Cells */,
 				548E38B028E815E900421823 /* UIKit Components */,
@@ -205,6 +222,15 @@
 			children = (
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		548E38B528E82EE300421823 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				548E38B628E82EF900421823 /* APButton.swift */,
+				548E38B828E8300800421823 /* XDismissButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,14 +305,20 @@
 			files = (
 				5448B29328E37BB600374839 /* Appetizer.swift in Sources */,
 				5448B29928E3828400374839 /* APError.swift in Sources */,
+				548E38B928E8300800421823 /* XDismissButton.swift in Sources */,
 				5448B29528E380D500374839 /* AppetizerListCell.swift in Sources */,
+				548E38BB28E8386F00421823 /* AccountViewModel.swift in Sources */,
 				5448B29B28E3892500374839 /* AppetizerListViewModel.swift in Sources */,
 				54AE8B4E28E45D8800E60AC0 /* Color+Ext.swift in Sources */,
 				54260BC128E0722300945370 /* AccountVIew.swift in Sources */,
+				548E38BF28E84DBC00421823 /* User.swift in Sources */,
+				548E38B728E82EF900421823 /* APButton.swift in Sources */,
 				54AE8B4C28E45CC600E60AC0 /* LoadingView.swift in Sources */,
 				54260BB328E04F3A00945370 /* AppetizerTabView.swift in Sources */,
 				5448B29728E3819E00374839 /* NetworkManager.swift in Sources */,
 				54AE8B5028E463BC00E60AC0 /* RemoteImage.swift in Sources */,
+				548E38BD28E840F300421823 /* String+Ext.swift in Sources */,
+				548E38B428E8181300421823 /* AppetizerDetailView.swift in Sources */,
 				54260BB128E04F3A00945370 /* AppetizersApp.swift in Sources */,
 				54AE8B4A28E4559000E60AC0 /* Alert.swift in Sources */,
 				54260BBF28E0721500945370 /* AppetizerListView.swift in Sources */,
