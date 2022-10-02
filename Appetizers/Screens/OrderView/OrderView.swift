@@ -21,7 +21,7 @@ struct OrderView: View {
                         }
                         .onDelete(perform: order.deleteItems)
                     }
-                    .listStyle(InsetGroupedListStyle())
+                    .listStyle(.plain)
                     Button {
                         print("order placed")
                     } label: {
