@@ -57,8 +57,10 @@ final class NetworkManager {
         guard let url = URL(string: appetizerUrl) else {
             throw APError.invalidURL
         }
-        let (data, _) = try await URLSession.shared.data(from: url)
-            
+        let (data, response) = try await URLSession.shared.data(from: url)
+        guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+            throw APError.invalidResponse
+        }
         do {
             let decoder = JSONDecoder()
             return try decoder.decode(AppetizerResponse.self, from: data).request
