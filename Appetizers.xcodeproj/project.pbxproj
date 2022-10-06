@@ -29,6 +29,7 @@
 		548E38C128E8599D00421823 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548E38C028E8599D00421823 /* OrderViewModel.swift */; };
 		548E38C428E85E4A00421823 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548E38C328E85E4A00421823 /* EmptyState.swift */; };
 		548E38C628E861D700421823 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548E38C528E861D700421823 /* Order.swift */; };
+		54A27A3128EF54A900AFBA6F /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A27A3028EF54A900AFBA6F /* Date+Ext.swift */; };
 		54AE8B4A28E4559000E60AC0 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AE8B4928E4559000E60AC0 /* Alert.swift */; };
 		54AE8B4C28E45CC600E60AC0 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AE8B4B28E45CC600E60AC0 /* LoadingView.swift */; };
 		54AE8B4E28E45D8800E60AC0 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AE8B4D28E45D8800E60AC0 /* Color+Ext.swift */; };
@@ -59,6 +60,7 @@
 		548E38C028E8599D00421823 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
 		548E38C328E85E4A00421823 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		548E38C528E861D700421823 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		54A27A3028EF54A900AFBA6F /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		54AE8B4928E4559000E60AC0 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		54AE8B4B28E45CC600E60AC0 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		54AE8B4D28E45D8800E60AC0 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
@@ -175,7 +177,6 @@
 			isa = PBXGroup;
 			children = (
 				5448B29628E3819E00374839 /* NetworkManager.swift */,
-				54AE8B4F28E463BC00E60AC0 /* RemoteImage.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -185,6 +186,7 @@
 			children = (
 				54AE8B4D28E45D8800E60AC0 /* Color+Ext.swift */,
 				548E38BC28E840F300421823 /* String+Ext.swift */,
+				54A27A3028EF54A900AFBA6F /* Date+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -240,6 +242,7 @@
 		548E38B228E8160300421823 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				54AE8B4F28E463BC00E60AC0 /* RemoteImage.swift */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				5448B29B28E3892500374839 /* AppetizerListViewModel.swift in Sources */,
 				54AE8B4E28E45D8800E60AC0 /* Color+Ext.swift in Sources */,
 				54260BC128E0722300945370 /* AccountView.swift in Sources */,
+				54A27A3128EF54A900AFBA6F /* Date+Ext.swift in Sources */,
 				548E38C428E85E4A00421823 /* EmptyState.swift in Sources */,
 				548E38BF28E84DBC00421823 /* User.swift in Sources */,
 				548E38B728E82EF900421823 /* APButton.swift in Sources */,
